@@ -1,8 +1,34 @@
 :root{
-  --background: #ffffffff;
-  --text: #2600ffff;
+  /* Light theme defaults (warm, muted / matte finish) */
+  --bg: #f6efe6;          /* warm off-white */
+  --surface: #efe4d9;     /* soft warm card */
+  --accent: #d17b5a;      /* warm terracotta primary accent */
+  --accent-2: #f2d5a7;    /* pale warm secondary accent */
+  --primary-rgb: 209,123,90; /* rgb of --accent for glow usage */
+  --side-accent: #b35a3f; /* darker warm accent for side bars */
+  --text: #2b2b28;        /* slightly soft dark text for light theme */
+  --muted: #7b6d63;      /* muted warm gray */
+  --shadow: rgba(16,24,40,0.04);
 }
+
 [data-theme="dark"]{
-  --background: #000000ff;
-  --text: #33ff2cff;
+  /* Dark theme palette (Color Hunt Palette 000000 9929ea cc66da faeb92) */
+  --bg: #000000;          /* page background */
+  --surface: #9929ea;     /* surface / card deep */
+  --accent: #cc66da;      /* secondary accent */
+  --accent-2: #faeb92;    /* light accent */
+  --side-accent: #6b0ea8; /* darker purple for side accents in dark theme */
+  --primary-rgb: 204,102,218; /* rgb of --accent for glow usage */
+  --text: #f4f4f8;        /* light text for dark theme */
+  --muted: #bfb7d9;
+  --shadow: rgba(0,0,0,0.45);
+}
+
+/* Helper semantic variables */
+:root {
+  --background: var(--bg);
+  --card-bg: var(--surface);
+  --primary: var(--accent);
+  --primary-2: var(--accent-2);
+  --foreground: var(--text);
 }

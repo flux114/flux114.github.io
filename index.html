@@ -1,36 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">      
-    <link rel="script" href="script.js" defer>
-   
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="variable.css">
+  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
 </head>
 <body>
-    <div id="main">
-      <div id="header" class="header">
-        <div class="header" id="name">name</div>
-        <div class="header" id="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, consectetur!</div>
+  <div class="side-accent left" aria-hidden="true"></div>
+  <div class="side-accent right" aria-hidden="true"></div>
+  <main id="main">
+    <!-- Header: name, intro and toggle button below description -->
+    <header id="header" class="header">
+      <div id="name" class="title">Hello, i'm flux114</div>
+      <div id="intro" class="desc">Hello, I'm a Front end Developer — I build clean, responsive web experiences.</div>
+      <div class="header-controls">
+        <button id="toggleTheme" class="toggle">Toggle theme</button>
       </div>
-      <div id="project" class="project">
-        <div id="project1" class="project"></div>
-        <div id="project2" class="project"></div>
+    </header>
+    <!-- Projects section (2x2) placed below header and above skill-set) -->
+    <section id="project" class="project-section">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-sub">Selected work — two highlighted projects</p>
+      <div class="project-grid">
+        <article class="card project-card">
+          <h3>Project One</h3>
+          <p>A responsive web application built with modern HTML, CSS and JavaScript. Focused on accessibility and performance.</p>
+        </article>
+        <article class="card project-card">
+          <h3>Project Two</h3>
+          <p>An interactive UI project demonstrating animations and reusable components, optimized for mobile and desktop.</p>
+        </article>
       </div>
-      <div id="content" class="content">
-        <div id="summary" class="content"></div>
-        <div id="skills" class="content">
-          <div class="skill" id="skill1"></div>
-          <div class="skill" id="skill2"></div>
-          <div class="skill" id="skill3"></div>
-        </div>
-      </div>
-      <div id="footer" class="footer">
-        <p>Contact me at</p>
-        <button id="toggleTheme">toggle</button>
-      </div>
-    </div>   
+    </section>
 
-<script src="script.js"></script>
+    <!-- Projects section repurposed as 'skill-set' grid like the provided design -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">Skill-Set</h2>
+      <p class="section-sub">Tools and areas I work with</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Git Version Control</h3>
+          <p>Working with Git for source control and collaboration.</p>
+        </article>
+        <article class="card">
+          <h3>App Design</h3>
+          <p>UI/UX focused designs and prototypes for web and mobile.</p>
+        </article>
+        <article class="card">
+          <h3>Back-end Dev</h3>
+          <p>Basic API knowledge and server-side integration.</p>
+        </article>
+        <article class="card">
+          <h3>Web Development</h3>
+          <p>HTML, CSS and JavaScript for responsive websites.</p>
+        </article>
+        <article class="card">
+          <h3>Photography</h3>
+          <p>Visual assets and imagery for projects.</p>
+        </article>
+        <article class="card">
+          <h3>Freelancing</h3>
+          <p>Client work, project planning and delivery.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Content: About me (skills column removed) -->
+    <section id="content" class="content">
+      <div id="aboutme" class="about card">
+        <h2>About me</h2>
+        <p>I’m a front-end developer focused on building accessible, performant web apps and sites. I enjoy crafting delightful UI while keeping things simple.</p>
+      </div>
+    </section>
+
+    <!-- Connect with me -->
+    <footer id="footer" class="footer">
+      <h2>Connect with me</h2>
+      <div class="description">
+        <span class="desc-text">Hello — you can contact me at</span>
+        <a class="desc-email" href="mailto:nhowler28@gmail.com">nhowler28@gmail.com</a>
+      </div>
+      <p class="meta">Find me on <a href="#">GitHub</a></p>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
